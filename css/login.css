@@ -1,0 +1,74 @@
+.redstar{
+    color: red;
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.log 
+{
+    height: 57rem;
+    width: 180rem;
+    background-image: url(https://eskipaper.com/images/tea-mug-1.jpg);
+}
+
+form{
+    position: absolute;
+    margin-left: 29rem;
+    height: 30rem;
+    width: 28rem;
+    border: transparent;
+    margin-top: 90px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+
+img{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: 0 0 15px brown;
+}
+
+label{
+    font-size: large;
+    margin-left: 10px;
+}
+
+
+.anew{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lisub{
+    cursor: pointer;
+    background-color: blueviolet;
+    border: transparent 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.lisub:focus{
+    box-shadow: none;
+}

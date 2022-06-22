@@ -1,0 +1,106 @@
+.shopping-cart{
+    padding: 15rem 5rem;
+    height: 170vh;
+    background-color: var(--white);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+.shopping-cart .box-container
+{
+    display: grid;
+    background-color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    float: left;
+
+}
+
+.shopping-cart .box-container .box
+{
+    padding: 2rem;
+    text-align: center;
+}
+
+.shopping-cart .box-container .box img{
+    height: 10rem;
+}
+
+.shopping-cart .box-container .box h3 a{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: var(--black)
+}
+.shopping-cart .box-container .box h3 a:hover{
+    text-decoration: underline;
+}
+
+
+.shopping-cart .box-container .box .price
+{
+    font-size: 1.5rem;
+    color: var(--bg);
+    padding: .5rem 0;
+}
+
+.shopping-cart .box-container .box .add
+{
+    background-color: var(--bg);
+    color: var(--main-color);
+    font-size: 15px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shopping-cart .box-container .box .add:hover{
+    background-color: var(--black);
+    color: var(--main-color);
+}
+
+.shopping-cart .box-container .box .remove
+{
+    background-color: #FF0000;
+    color: var(--white);
+    font-size: 15px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shopping-cart .box-container .box .remove:hover{
+    background-color: #880808;
+    color: var(--main-color);
+}
+
+.shopping-cart .summary{
+    float: right;
+    margin-right: 20rem;
+    border-style: groove;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.total h4{
+    float: right;
+    margin-right: 31rem;
+    margin-top: -6.5rem;
+}
+
+.charge h4{
+    color: #32CD32;
+    float: right;
+    margin-right: 31.5rem;
+    margin-top: -5.2rem;
+}
+
+.amount h4{
+    color: var(--bg);
+    float: right;
+    margin-right: 31rem;
+    margin-top: -2.5rem;
+
+}

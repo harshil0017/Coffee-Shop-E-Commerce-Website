@@ -1,0 +1,40 @@
+
+.recipe
+{
+    background-color: #fff;
+    margin-top: 9%;
+}
+
+.recipe .title
+{
+    padding: 1rem;
+}
+
+.recipe .content .image img{
+    height: 30rem;
+    width: 30rem;
+    padding: .5rem;
+}
+
+.recipe .content h2
+{
+    text-align: center;
+}
+
+.recipe .content .box-container
+{
+    display: grid;
+    background-color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.recipe .content .box-container .box
+{
+    padding: 5rem;
+    text-align: center;
+ 
+}
+
+.content .box-container .box img{
+    height: 10rem;
+}

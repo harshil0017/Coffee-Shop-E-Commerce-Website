@@ -1,0 +1,13 @@
+
+.benefit
+{
+    background-color: var(--white);
+}
+
+.content img{
+    height: 35rem;
+    width: 60rem;
+    padding: 1.5rem;
+    margin-top: 5rem;
+}
+

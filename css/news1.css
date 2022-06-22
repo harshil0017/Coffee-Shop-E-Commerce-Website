@@ -1,0 +1,11 @@
+
+.news
+{
+    margin-top: 9%;
+    background-color: var(--white);
+    align-items: center;
+}
+
+.news .content img{
+    height: 35rem
+}

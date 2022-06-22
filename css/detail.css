@@ -1,0 +1,156 @@
+
+/*Product details*/
+.grid {
+    display: grid;
+    padding: 180px;
+    grid-gap: 16px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.desc{
+    text-align: left;
+}
+
+.buton-hover:hover{
+    cursor: pointer;
+}
+
+.price{
+    font-size: x-large;
+}
+
+.addetail{
+    margin-top: 100px;
+}
+
+/*Quantity button*/
+.quantity {
+    display: flex;
+    justify-content: left;
+}
+
+.quantity button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0;
+    background: #fff
+}
+
+.quantity input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+.total-price {
+    text-align: left;
+    font-size: x-large;
+}
+
+.total-price .fa-rupee {
+    display: inline-block;
+    font-size: 90%;
+    margin-right: 5px;
+}
+
+
+
+
+/*Recommended*/
+.recommended
+{
+    margin-top: -15rem;
+    background-color: #fff;
+    font-family: "Lucida Console", "Courier New", monospace;  
+    margin-bottom: 5rem;
+}
+
+.recommended h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.recommended .box-container
+{
+    display: grid;
+    text-align: center;
+    background-color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    border: var(--bg);
+}
+
+.recommended .box-container .box
+{
+    padding: 5rem;
+    text-align: center;
+    background-color: #fff;
+    border:var(--border1);
+}
+
+.recommended .box-container .box:hover{
+    background-color: var(--main-color);
+
+}
+
+.recommended .box-container .box img{
+    height: 10rem;
+}
+
+.recommended .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.recommended .box-container .box .price
+{
+    font-size: 1.5rem;
+    padding: .9rem 0;
+}
+
+.recommended .box-container .box .button
+{
+    background-color: var(--bg);
+    color: var(--main-color);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.recommended .box-container .box .button:hover{
+    background-color: var(--black);
+    color: var(--main-color);
+}
+
+@media (max-width:768px)
+{
+    .detail
+    {
+        font-size: 55%;
+    }
+
+    .detail .recommended
+    {
+        padding: 1.5rem 2rem;
+    }
+}
+/*Best seller section end*/
+
+
+

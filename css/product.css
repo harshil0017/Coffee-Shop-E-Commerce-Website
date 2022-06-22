@@ -1,0 +1,85 @@
+
+/*Product Coffee*/
+.product
+{
+    padding: 13rem 5rem;
+    height: 170vh;
+    background-color: var(--white);
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.product .heading-product {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.product .box-container
+{
+    display: grid;
+    background-color: var(--white);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.product .box-container .box
+{
+    padding: 5rem;
+    text-align: center;
+}
+
+.product .box-container .box:hover{
+    box-shadow:20px 20px 50px grey;
+    transform: translateY(-.5rem);
+}
+
+.product .box-container .box img{
+    height: 10rem;
+}
+
+.product .box-container .box h3 a{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: var(--black)
+}
+.product .box-container .box h3 a:hover{
+    text-decoration: underline;
+}
+
+
+.product .box-container .box .price
+{
+    font-size: 1.5rem;
+    color: var(--bg);
+    padding: .5rem 0;
+}
+
+.product .box-container .box .add
+{
+    background-color: var(--bg);
+    color: var(--main-color);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product .box-container .box .add:hover{
+    background-color: var(--black);
+    color: var(--main-color);
+}
+
+@media (max-width:991px)
+{
+    .product
+    {
+        font-size: 55%;
+    }
+
+    .product .box-container
+    {
+        padding: 1.5rem 2rem;
+    }
+}
+
