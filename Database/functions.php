@@ -142,6 +142,13 @@ function cartElement($productname, $productSize, $productprice, $productImg, $pr
     echo $element;
 }
 
+function xmlOrder($productname, $productprice, $productid){
+    $element = "
+   
+       ";
+    echo $element;
+}
+
 function news($title, $image, $text){
     $element ="
         <div class=\"box\">

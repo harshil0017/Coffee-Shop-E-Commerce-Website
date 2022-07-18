@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product type="Coffee">
+    <Title>ATTIKAN ESTATE</Title>
+    <Price>250</Price>
+  </Product>
+  <Product type="Coffee">
+    <Title>BARRBARA ESTATE</Title>
+    <Price>220</Price>
+  </Product>
+  <Product type="Coffee">
+    <Title>SPIRAZIONE PALERMO x10</Title>
+    <Price>200</Price>
+  </Product>
+</Products>

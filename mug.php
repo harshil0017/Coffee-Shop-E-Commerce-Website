@@ -66,6 +66,43 @@
         $_SESSION['cart'][0] = $item_array;
         print_r($_SESSION['cart']);
      }
+
+     if(isset($_SESSION['cart'])){
+      $product_id = array_column($_SESSION['cart'], 'product_id');
+      $result = $database->getData();
+               $dom = new DOMDocument();
+               $dom->encoding = 'utf-8';
+               $dom->xmlVersion = '1.0';
+               $dom->formatOutput = true;
+           
+               $xml_file_name = 'mug_product_order_list.xml';      
+               $root = $dom->createElement('Products');
+
+               while($row = mysqli_fetch_assoc($result)){  
+                  foreach($product_id as $id){
+                     if($row['id'] == $id){      
+                     $product_node = $dom->createElement('Product');
+              
+                     $attr_title = new DOMAttr('type', $_GET['tablename']);
+                     $product_node->setAttributeNode($attr_title);
+                 
+                     $child_node_title = $dom->createElement('Title', $row['product_name']);
+                     $product_node->appendChild($child_node_title);
+                 
+                     $child_node_price = $dom->createElement('Price',$row['product_price']);
+                     $product_node->appendChild($child_node_price);
+                 
+                     $root->appendChild($product_node);
+                 
+                     $dom->appendChild($root);
+                 
+                     $dom->save($xml_file_name);
+    
+               }
+            }
+
+         }
+      }
    }
    ?>
 

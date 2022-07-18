@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product type="Tea">
+    <Title>SWEET ALMOND GREEN TEA</Title>
+    <Price>240</Price>
+  </Product>
+  <Product type="Tea">
+    <Title>ELDERBERRY HIBISCUS</Title>
+    <Price>350</Price>
+  </Product>
+</Products>
